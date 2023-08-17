@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+          
+        /* border: 2px solid green; */
+        height: 100%;
+
+        
+        }
+        div{
+            padding: 2rem;
+        }
+        h1,h2{
+
+            display: flex;
+          flex-direction:column;
+          align-items: center;
+            /* border: 2px solid black; */
+        }
+        p{
+            display: flex;
+          flex-direction:column;
+          align-items: center;
+            /* border: 2px solid purple; */
+            font-size: larger;
+            
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+function UI(){
+    var href=<div>
+        <h1>About Us</h1>
+        <h2>At Zappos.com, our purpose is simple: to live and deliver WOW.</h2>
+            <p>Twenty years ago, we began as a small online retailer that only sold shoes. Today, we still sell shoes — as well as clothing, handbags, accessories, and more. That "more" is providing the very best customer service, customer experience, and company culture. 
+                We aim to inspire the world by showing it's possible to simultaneously deliver happiness to customers, employees, vendors, shareholders, and the community in a long-term, sustainable way.</p><p>We hope that in the future people won't even realize we started selling shoes online. Instead, they'll know Zappos as a service company that just happens to sell _______.</p>
+        </div>
+        
+     ReactDOM.render(href,document.getElementById('root'));
+    }
+   UI();
+        </script>
+
+  </body>
+</html>
