@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+          
+        /* border: 2px solid green; */
+        height: 100%;
+        background-color: #ea6464;
+
+        
+        }
+        div{
+            padding: 2rem;
+        }
+        h1{
+             color: white;
+             font-size:80px;
+             font-weight:800;
+            
+            display: flex;
+          flex-direction:column;
+          align-items: center;
+          
+            /* border: 2px solid black; */
+            height: 150px;
+            padding: 5rem;
+            
+        }
+        h2{
+            color: white;
+            padding-left: 38rem;
+        }
+        img{
+            padding-left: 39rem;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+function UI(){
+    var href=<div>
+        <h1>The Evolution of <br></br>Airbnb's Frontend</h1>
+        <h2>@spikebrehm</h2>
+        <img src="logo.jpg" alt=""/>
+        </div>
+    
+        
+     ReactDOM.render(href,document.getElementById('root'));
+    }
+   UI();
+        </script>
+
+  </body>
+</html>
